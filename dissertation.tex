@@ -1,0 +1,69 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}		
+\usepackage{amssymb}
+\usepackage{natbib}
+\usepackage{wrapfig}
+\usepackage{url}
+\usepackage{float}
+\usepackage[labelfont=bf]{caption}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[toc,page]{appendix}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%\usepackage{fullpage}
+%\linespread{1.2}
+
+\title{Tangible Entertainment Systems for People Living with Dementia} 
+\author {Cameron Steer\\
+	705784@swansea.ac.uk\\
+	Swansea University\\
+	Department of Computer Science\\
+	Swansea,Wales\\
+	}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\begin{abstract}
+\noindent The world population is increasing, people are able to live longer than ever before due to advances in modern medicine.
+With this comes an increased number of people who live with symptoms of dementia. 
+In this document we introduce the idea of developing Tangible User Interfaces for people living with dementia to facilitate meaningful group activities.
+More over, we propose what technologies can used in achieving this, paired with concept ideas for systems to facilitate these interactions.
+Finally outlining a development model, potential risks and time plan in order to achieve this aim.
+
+\end{abstract}
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\small
+\tableofcontents
+\normalsize
+\newpage
+
+%\listoffigures
+%\listoftables
+\input{intro.tex}
+\input{backgroud.tex}
+
+\small
+\bibliographystyle{plain}
+\bibliography{references.bib}
+\newpage
+\iffalse
+\begin{appendices}
+\section{Spark Core Notification Code}\label{notecube}
+\lstinputlisting{code/rgbControler.ino}
+\lstinputlisting{code/checkEmail.py}
+\lstinputlisting{code/weather.py}
+
+\section{Plant Game Code}\label{accCode}
+\lstinputlisting{code/WateringA.pde}
+\lstinputlisting{code/Rain.pde}
+\end{appendices}
+\fi
+\end{document}
